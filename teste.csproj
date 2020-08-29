@@ -63,8 +63,10 @@
     <Compile Include="src\Actors\Player.cs" />
     <Compile Include="src\Miscs\Coin.cs" />
     <Compile Include="src\Miscs\Portal.cs" />
+    <Compile Include="src\UI\PauseScreen.cs" />
     <Compile Include="src\UI\PlayButton.cs" />
     <Compile Include="src\UI\QuitButton.cs" />
+    <Compile Include="src\UI\RetryButton.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

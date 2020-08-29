@@ -23,6 +23,7 @@ public class PlayButton : Button
 //  }
 	private void _on_button_up()
 	{
+		GetTree().Paused = false;
 		GetTree().ChangeScene(NextScenePath);
 	}
 }
