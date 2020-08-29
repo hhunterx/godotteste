@@ -12,7 +12,23 @@ public class PauseScreen : Control
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		var playerData = GetNode<PlayerData>("/root/PlayerData");
+		playerData.Connect("OnScoreUpdate", this, "OnScoreUpdate");
+		playerData.Connect("OnPlayerDied", this, "OnPlayerDied");
+		OnScoreUpdate(0);
+	}
 
+	private void OnScoreUpdate(int score)
+	{
+		var l = GetNode<Label>("score");
+		l.Text = $"Score: {score}";
+	}
+
+	private void OnPlayerDied(int deaths)
+	{
+		var l = GetNode<Label>("overlay/Title");
+		l.Text = "You died!";
+		SetPause(true);
 	}
 
 	public override void _UnhandledInput(InputEvent @event)

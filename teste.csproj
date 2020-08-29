@@ -61,6 +61,7 @@
     <Compile Include="src\Actors\Actor.cs" />
     <Compile Include="src\Actors\Enemy.cs" />
     <Compile Include="src\Actors\Player.cs" />
+    <Compile Include="src\AutoLoad\PlayerData.cs" />
     <Compile Include="src\Miscs\Coin.cs" />
     <Compile Include="src\Miscs\Portal.cs" />
     <Compile Include="src\UI\PauseScreen.cs" />

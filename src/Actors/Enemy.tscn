@@ -36,4 +36,4 @@ collision_layer = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StompDetector"]
 position = Vector2( 0, -83.5 )
 shape = SubResource( 2 )
-[connection signal="body_entered" from="StompDetector" to="." method="_on_StompDetector_body_entered"]
+[connection signal="area_entered" from="StompDetector" to="." method="_on_StompDetector_area_entered"]

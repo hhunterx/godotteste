@@ -11,7 +11,7 @@ public class Actor : KinematicBody2D
 	public Vector2 FLOOR_NORMAL = Vector2.Up;
 	
 	[Export]
-	public Vector2 speed {get;set;} = new Vector2(500, 1000);
+	public Vector2 speed {get;set;} = new Vector2(300, 600);
 	
 	[Export]
 	public float gravity { get; set; } = 3000;

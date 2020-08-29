@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="teste"
 run/main_scene="res://src/UI/MainScreen.tscn"
 
+[autoload]
+
+PlayerData="*res://src/AutoLoad/PlayerData.tscn"
+
 [display]
 
 window/size/width=1920

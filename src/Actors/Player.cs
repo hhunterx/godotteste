@@ -8,7 +8,7 @@ public class Player : Actor
 	// private string b = "text";
 
 	[Export]
-	public float stomp_impulse = 1000;
+	public float stomp_impulse = 800;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -16,14 +16,21 @@ public class Player : Actor
 
 	}
 
-	public void _on_EnemyDetector_area_entered(Area2D body)
+	public void _on_StompDetector_area_entered(Area2D body)
 	{
 		velocity = CalculateStompVelocity(velocity, stomp_impulse);
 	}
 
 	public void _on_EnemyDetector_body_entered(PhysicsBody2D body)
 	{
+		Die();
+	}
+
+	private void Die()
+	{
 		QueueFree();
+		var playerData = (PlayerData)GetNode("/root/PlayerData");
+		playerData.AddDeath();
 	}
 
 	public override void _PhysicsProcess(float delta)

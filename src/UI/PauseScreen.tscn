@@ -17,6 +17,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="score" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -190.0
+margin_top = 39.0
+margin_right = -69.0
+margin_bottom = 70.0
+text = "Score: %s"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="overlay" type="ColorRect" parent="."]
 visible = false
 anchor_right = 1.0
