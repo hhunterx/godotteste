@@ -14,7 +14,7 @@ public class Enemy : Actor
 	public override void _Ready()
 	{
 		SetPhysicsProcess(false); // para iniciar parado
-		velocity.x = -speed.x;
+		velocity.x = -(speed.x / 1.5f);
 	}
 
 	// seria area enter??
