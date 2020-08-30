@@ -64,6 +64,7 @@
     <Compile Include="src\AutoLoad\PlayerData.cs" />
     <Compile Include="src\Miscs\Coin.cs" />
     <Compile Include="src\Miscs\Portal.cs" />
+    <Compile Include="src\UI\EndScreen.cs" />
     <Compile Include="src\UI\PauseScreen.cs" />
     <Compile Include="src\UI\PlayButton.cs" />
     <Compile Include="src\UI\QuitButton.cs" />
